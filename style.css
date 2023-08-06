@@ -1,0 +1,337 @@
+Reset some default styling
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar */
+.nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.elements ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.elements li {
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s;
+    list-style: none;
+    display: inline;
+    font-family: Arial, sans-serif;
+}
+
+.elements li:hover {
+    color: #ff6600;
+}
+
+/* Style for the dropdown */
+.elements select {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Style for dropdown options */
+.elements select option {
+    background-color: #444;
+    color: #fff;
+}
+
+.head {
+    height: auto;
+    background-color: #bebef1;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    align-items: space-evenly;
+}
+
+.head h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.head button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.head button:hover {
+    background-color: #ff8533;
+}
+
+.main {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.para {
+    width: 50%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+.images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-evenly;
+    width:90%;
+}
+a{
+    color:white;
+}
+h1{
+    background-color: #bebef1;
+    height:30px;
+    width:100%;
+}
+.about{
+    text-align:center;
+}
+
+/* Style for the about section */
+.about {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.about img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5%;
+    margin: 20px 0;
+}
+
+.about hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.about h3 {
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.about p {
+    margin: 0 auto 20px;
+    max-width: 800px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    margin-right: 15px;
+}
+
+.footer a:hover {
+    color: #ff6600;
+}
+
+.footer button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer button:hover {
+    background-color: #ff8533;
+}
+
+/* Style for the content container */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.para {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin-right: 20px;
+    font-size: 16px
+}
+
+.paraimg {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Added to center-align text vertically */
+}
+
+.paraimg img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 20px; /* Added to create space between image and paragraph */
+}
+
+.paraimg p {
+    text-align: center;
+    line-height: 1.6;
+}
+/* Media query for screens with max width of 768px (e.g., mobile devices) */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .para,
+    .paraimg {
+        width: 100%; /* Take up full width on smaller screens */
+        margin-right: 0; /* Reset margin for better layout */
+    }
+
+    .paraimg img {
+        margin-bottom: 10px; /* Reduce space between image and paragraph on smaller screens */
+    }
+}
+
+
+/* Reset some default styling */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the form section */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.elementor-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    margin: 0 10px;
+}
+
+.elementor-heading-title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.elementor-column p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Style for the form inputs and button */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #ff8533;
+}
+
